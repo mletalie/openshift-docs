@@ -1595,10 +1595,10 @@ Mirror images from one repository to another
   oc image mirror myregistry.com/myimage:latest file://myrepository/myimage:latest
   
   # Copy image to S3 (pull from <bucket>.s3.amazonaws.com/image:latest)
-  oc image mirror myregistry.com/myimage:latest s3://s3.amazonaws.com/<region>/<bucket>/image:latest
+  oc image mirror myregistry.com/myimage:latest s3://s3.amazonaws.com/<aws_region>/<bucket>/image:latest
   
   # Copy image to S3 without setting a tag (pull via @<digest>)
-  oc image mirror myregistry.com/myimage:latest s3://s3.amazonaws.com/<region>/<bucket>/image
+  oc image mirror myregistry.com/myimage:latest s3://s3.amazonaws.com/<aws_region>/<bucket>/image
   
   # Copy image to multiple locations
   oc image mirror myregistry.com/myimage:latest docker.io/myrepository/myimage:stable \

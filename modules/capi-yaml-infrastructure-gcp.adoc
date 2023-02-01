@@ -18,7 +18,7 @@ spec:
   network:
     name: <cluster_name>-network <2>
   project: <project> <3>
-  region: <region> <4>
+  region: <aws_region> <4>
 ----
 <1> Specify the infrastructure kind for the cluster. This value must match the value for your platform.
 <2> Specify the name of the cluster.

@@ -82,15 +82,15 @@ endif::aws-secret[]
 Create a VPC endpoint and attach it to the subnets that the clusters are using. Name the endpoints as follows:
 
 ifndef::aws-china,aws-secret[]
-* `ec2.<region>.amazonaws.com`
-* `elasticloadbalancing.<region>.amazonaws.com`
-* `s3.<region>.amazonaws.com`
+* `ec2.<aws_region>.amazonaws.com`
+* `elasticloadbalancing.<aws_region>.amazonaws.com`
+* `s3.<aws_region>.amazonaws.com`
 endif::aws-china,aws-secret[]
 
 ifdef::aws-china[]
-* `ec2.<region>.amazonaws.com.cn`
-* `elasticloadbalancing.<region>.amazonaws.com`
-* `s3.<region>.amazonaws.com`
+* `ec2.<aws_region>.amazonaws.com.cn`
+* `elasticloadbalancing.<aws_region>.amazonaws.com`
+* `s3.<aws_region>.amazonaws.com`
 endif::aws-china[]
 
 ifdef::aws-secret[]
@@ -100,7 +100,7 @@ SC2S::
 ** `s3.<region>.sc2s.sgov.gov`
 C2S::
 ** `elasticloadbalancing.<region>.c2s.ic.gov`
-** `ec2.<region>.c2s.ic.gov`
+** `ec2.<regigiton>.c2s.ic.gov`
 ** `s3.<region>.c2s.ic.gov`
 endif::aws-secret[]
 
@@ -117,15 +117,15 @@ As part of the installation process, you can configure an HTTP or HTTPS proxy. W
 As part of the installation process, you can configure an HTTP or HTTPS proxy with VPC endpoints. Create a VPC endpoint and attach it to the subnets that the clusters are using. Name the endpoints as follows:
 
 ifndef::aws-china,aws-secret[]
-* `ec2.<region>.amazonaws.com`
-* `elasticloadbalancing.<region>.amazonaws.com`
-* `s3.<region>.amazonaws.com`
+* `ec2.<aws_region>.amazonaws.com`
+* `elasticloadbalancing.<aws_region>.amazonaws.com`
+* `s3.<aws_region>.amazonaws.com`
 endif::aws-china,aws-secret[]
 
 ifdef::aws-china[]
-* `ec2.<region>.amazonaws.com.cn`
-* `elasticloadbalancing.<region>.amazonaws.com`
-* `s3.<region>.amazonaws.com`
+* `ec2.<aws_region>.amazonaws.com.cn`
+* `elasticloadbalancing.<aws_region>.amazonaws.com`
+* `s3.<aws_region>.amazonaws.com`
 endif::aws-china[]
 
 ifdef::aws-secret[]
