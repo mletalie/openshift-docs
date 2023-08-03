@@ -145,7 +145,7 @@ $ aws kms get-key-policy --key-id <key_id_or_arn> --policy-name default --output
             "Effect": "Allow",
             "Principal": {
                 "AWS": [
-                    "arn:aws:iam::<aws-account_id>:role/ManagedOpenShift-Support-Role", <1>
+                    "arn:aws:iam::<aws_account_id>:role/ManagedOpenShift-Support-Role", <1>
                     "arn:aws:iam::<aws_account_id>:role/ManagedOpenShift-Installer-Role",
                     "arn:aws:iam::<aws_account_id>:role/ManagedOpenShift-Worker-Role",
                     "arn:aws:iam::<aws_account_id>:role/ManagedOpenShift-ControlPlane-Role",
