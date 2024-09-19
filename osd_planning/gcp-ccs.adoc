@@ -20,3 +20,4 @@ include::modules/gcp-limits.adoc[leveloffset=+1]
 == Additional resources
 
 * xref:../security/rh-required-whitelisted-IP-addresses-for-sre-access.adoc#rh-required-whitelisted-IP-addresses-for-sre-access[Required allowlist IP addresses for SRE access]
+* xref:../../osd_install_access_delete_cluster/creating-a-gcp-cluster-with-workload-identity-federation.adoc#create-wif-cluster-cli_osd-creating-a-cluster-on-gcp-with-workload-identity-federation[Creating a WIF configuration].
