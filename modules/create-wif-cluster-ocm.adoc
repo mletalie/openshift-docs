@@ -135,15 +135,7 @@ The previous step refers to labels within Kubernetes, not Google Cloud. For more
 +
 [IMPORTANT]
 ====
-The VPC owner of the host project must enable a project as a host project in their Google Cloud console. For more information, see link:https://cloud.google.com/vpc/docs/provisioning-shared-vpc#set-up-shared-vpc[Enable a host project].
-====
-
-.. Select *Install into GCP Shared VPC*.
-.. Specify the *Host project ID*. If the specified host project ID is incorrect, cluster creation fails.
-+
-[IMPORTANT]
-====
-The VPC owner of the host project must add the *Computer Network Administrator*, *Compute Security Administrator*, and *DNS Administrator* roles to the following service accounts prior to cluster installation:
+The VPC owner of the host project must enable a project as a host project in their Google Cloud console and add the *Computer Network Administrator*, *Compute Security Administrator*, and *DNS Administrator* roles to the following service accounts prior to cluster installation:
 
 * **osd-deployer**
 * **osd-control-plane**
@@ -151,8 +143,24 @@ The VPC owner of the host project must add the *Computer Network Administrator*,
 
 Failure to do so will cause the cluster go into the "Installation Waiting" state. If this occurs, you must contact the VPC owner of the host project to assign the roles to the service accounts listed above.
 The VPC owner of the host project has 30 days to grant the listed permissions before the cluster creation fails.
-For information about Shared VPC permissions, see link:https://cloud.google.com/vpc/docs/provisioning-shared-vpc#migs-service-accounts[Provision Shared VPC].
+For more information, see link:https://cloud.google.com/vpc/docs/provisioning-shared-vpc#set-up-shared-vpc[Enable a host project] and link:https://cloud.google.com/vpc/docs/provisioning-shared-vpc#migs-service-accounts[Provision Shared VPC].
 ====
+
+.. Select *Install into GCP Shared VPC*.
+.. Specify the *Host project ID*. If the specified host project ID is incorrect, cluster creation fails.
+// +
+// [IMPORTANT]
+// ====
+// The VPC owner of the host project must and add the *Computer Network Administrator*, *Compute Security Administrator*, and *DNS Administrator* roles to the following service accounts prior to cluster installation:
+
+// * **osd-deployer**
+// * **osd-control-plane**
+// * **openshift-machine-api-gcp**
+
+// Failure to do so will cause the cluster go into the "Installation Waiting" state. If this occurs, you must contact the VPC owner of the host project to assign the roles to the service accounts listed above.
+// The VPC owner of the host project has 30 days to grant the listed permissions before the cluster creation fails.
+// For information about Shared VPC permissions, see link:https://cloud.google.com/vpc/docs/provisioning-shared-vpc#migs-service-accounts[Provision Shared VPC].
+// ====
 +
 .. If you opted to install the cluster in an existing GCP VPC, provide your *Virtual Private Cloud (VPC) subnet settings* and select *Next*.
 You must have created the Cloud network address translation (NAT) and a Cloud router. See _Additional resources_ for information about Cloud NATs and Google VPCs.
