@@ -20,8 +20,13 @@ Migrating an existing non-WIF cluster to a WIF configuration is not supported. T
 == Creating a WIF configuration
 
 .Procedure
+You can create a WIF configuration using auto mode or manual mode.
 
-* Run one of the following commands to create a WIF configuration:
+**Auto mode** enables you to automatically create the service accounts for {product-title} components as well as other IAM resources.
+
+Alternatively, you can use **Manual mode* to review the details in regard to the service accounts for {product-title} components and other IAM resources before using your preferred options.
+
+* Based on your preference, run one of the following commands to create a WIF configuration:
 
 ** Create a WIF configuration in auto mode by running the following command:
 +
@@ -156,7 +161,7 @@ ocm create cluster <cluster_name> \ <1>
 <1> Replace `<cluster_name>` with a name for your cluster.
 <2> Replace `<wif_name>` with the name of the newly created or pre-existing WIF configuration.
 <3> Replace `<gcp_region>` with the {GCP} region where the new cluster will be deployed.
-<4> Select either "service-account" or "wif" as your authentication type.
+<4> Select "wif" as your authentication type.
 <5> Optional: Replace `<instance_type>` with the instance type you want for your cluster.
 <6> Optional: Replace `<version>` with {product-title} version you desire for your cluster.
 --
