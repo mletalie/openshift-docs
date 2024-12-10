@@ -202,11 +202,13 @@ By enabling additional etcd encryption, you will incur a performance overhead of
 +
 .. Click *Next*.
 
-. On the *Default machine pool* page, select a *Compute node instance type* and a *Compute node count*. The number and types of nodes that are available depend on your {product-title} subscription. If you are using multiple availability zones, the compute node count is per zone.
+. On the *Default machine pool* page, select a *Compute node instance type* from the drop-down menu.
+. Optional: Select *Enable autoscaling* and configure the cluster autoscaling settings if you want to enable autoscaling.
+. Select a *Compute node count* from the drop-down menu.
 +
 [NOTE]
 ====
-After your cluster is created, you can change the number of compute nodes in your cluster, but you cannot change the compute node instance type in a machine pool. The number and types of nodes available to you depend on your {product-title} subscription.
+ If you are using multiple availability zones, the compute node count is per zone. After your cluster is created, you can change the number of compute nodes in your cluster, but you cannot change the compute node instance type in a machine pool. The number and types of nodes available to you depend on your {product-title} subscription.
 ====
 
 ifdef::osd-on-aws[]
