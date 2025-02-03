@@ -38,10 +38,11 @@ Alternatively, you can use the `manual` mode. In `manual` mode, you are provided
 ----
 $ ocm gcp create wif-config --name <wif_name> \ <1>
   --project <gcp_project_id> \ <2>
+  --version <osd_versions> <3>
 ----
 <1> Replace `<wif_name>` with the name of your WIF configuration.
 <2> Replace `<gcp_project_id>` with the ID of the {GCP} project where the WIF configuration will be implemented.
-+
+<3> Optional: Replace `<osd_versions>` with the desired {product-title} versions the wif-config will need to support. If you do not specify versions, the wif-config will support the latest version only.
 --
 .Example output
 [source,terminal]
@@ -220,6 +221,11 @@ ocm gcp update wif-config --version <version> \ <1>
 ----
 <1> Replace `<version>` with the {product-title} y-stream version you plan to update the cluster to.
 <2> Replace `<wif_name>` with the name of the WIF configuration you want to update.
+
+[NOTE]
+====
+A wif-config that is updated to a newer version will be supported by the updated version as well as any previously supported versions.
+====
 
 [id="ocm-cli-verify-wif-commands_{context}"]
 == Verifying a WIF configuration
