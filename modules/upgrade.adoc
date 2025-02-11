@@ -70,6 +70,6 @@ For recurring upgrades, you will also receive email notifications before the upg
 
 [id="wif-upgrades_{context}"]
 == Cluster upgrades with Workload Identity Federation (WIF)
-Before updating a {product-title} on {GCP} cluster with WIF authentication type to a newer y-stream version, you must update the wif-config to that version as well. Failure to do so before attempting to update the cluster version will result in an error.
-For more information on how to update a wif-config, see xref:../osd_gcp_clusters/creating-a-gcp-cluster-with-workload-identity-federation.adoc#wif-configuration-update_osd-creating-a-cluster-on-gcp-with-workload-identity-federation[Updating a WIF configuration].
+Before updating an {product-title} on {GCP} cluster with WIF authentication type to a newer y-stream version, you must update the WIF configuration to that version as well. Failure to do so before attempting to update the cluster version will result in an error.
+For more information on how to update a WIF configuration, see xref:../osd_gcp_clusters/creating-a-gcp-cluster-with-workload-identity-federation.adoc#wif-configuration-update_osd-creating-a-cluster-on-gcp-with-workload-identity-federation[Updating a WIF configuration].
 
